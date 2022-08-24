@@ -1,0 +1,8 @@
+---
+const {frontmatter} = Astro.props as Props;
+---
+
+<h1>{frontmatter.title}</h1>
+<div class="m-auto mt-[25vh] w-fit">
+<slot/>
+</div>

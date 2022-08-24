@@ -1,0 +1,27 @@
+@import "fonts/fonts.css";
+
+html {
+    @apply scroll-smooth;
+}
+
+h1, h2, h3 {
+    @apply font-display my-4 uppercase;
+}
+
+h1 {
+    @apply text-3xl lg:text-5xl font-bold;
+}
+h2 {
+    @apply text-2xl lg:text-4xl font-bold;
+}
+h3 {
+    @apply text-xl lg:text-2xl font-bold;
+}
+
+main, article, p, span {
+    @apply font-sans;
+}
+
+p {
+    @apply prose;
+}

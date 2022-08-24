@@ -1,0 +1,50 @@
+---
+import logo from '/images/logo.png'
+---
+
+<div class="drawer drawer-end">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col scroll-smooth">
+
+    <!-- Navbar -->
+    <div class="w-full navbar bg-base-100/60 backdrop-blur shadow-lg sticky top-0 z-50">
+
+      <div class="flex-none navbar-start hidden lg:block">
+        <ul class="menu menu-horizontal">
+          <!-- Navbar menu content here -->
+          <li><a class="active:bg-primary" href="#manifesto">Manifesto</a></li>
+          <li><a class="active:bg-primary" href="#team">Team</a></li>
+          <li><a class="active:bg-primary" href="#nft">NFT</a></li>
+          <li><a class="active:bg-primary" href="#cedar">Cedar</a></li>
+          <li><a href="#whitepaper" class="bg-primary hover:brightness-95">Whitepaper</a></li>
+        </ul>
+      </div>
+
+      <div class="flex-1 mx-2 navbar-center">
+              <a href="#"><img src={logo} class="w-10 h-10"></a>
+      </div>
+
+
+      <div class="flex-none navbar-end lg:hidden">
+        <label for="my-drawer-3" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+      </div>
+
+    </div>
+    <slot />
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-3" class="drawer-overlay"></label>
+    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+      <!-- Sidebar content here -->
+      <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#nft">NFT</a></li>
+        <li><a href="#cedar">Cedar</a></li>
+        <li><a class="bg-primary hover:brightness-95">Whitepaper</a></li>
+
+    </ul>
+
+  </div>
+</div>
