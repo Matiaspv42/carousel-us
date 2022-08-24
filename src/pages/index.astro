@@ -3,6 +3,7 @@
 
         import Layout from '../layouts/Layout.astro';
         import logo from '/images/logo.svg'
+        import logoHor from '/images/logo-hor.svg'
         import altLogo from '/images/logo-alt-hor.svg'
         import lettering from '/images/logo-lettering.webp'
 
@@ -33,6 +34,9 @@
         <Nav>
             <div id="manifesto" class="min-h-screen scroll-mt-[4rem] p-4 show-on-scroll">
                 <Manifesto />
+                <div class="h-40 w-full justify-center flex items-center overflow-y-hidden">
+                    <img src={logoHor} class="w-96 object-cover" alt="footer logo"/>
+                </div>
             </div>
             <div id="team" class="scroll-mt-[4rem] h-fit mb-10 p-4">
                 <h1>Core team</h1>
