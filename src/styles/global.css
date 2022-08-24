@@ -1,7 +1,7 @@
 @import "fonts/fonts.css";
 
 html {
-    @apply scroll-smooth;
+    @apply motion-safe:scroll-smooth;
 }
 
 h1, h2, h3 {
@@ -24,4 +24,12 @@ main, article, p, span {
 
 p {
     @apply prose;
+}
+
+.btn {
+    @apply rounded-none;
+}
+
+.card {
+    @apply rounded-none;
 }

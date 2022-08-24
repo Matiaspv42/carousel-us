@@ -1,10 +1,6 @@
 ---
-import logo from '/images/logo.png'
+import logo from '/images/logo.webp'
 ---
-
-<div class="drawer drawer-end">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col scroll-smooth">
 
     <!-- Navbar -->
     <div class="w-full navbar bg-base-100/60 backdrop-blur shadow-lg sticky top-0 z-50">
@@ -12,11 +8,11 @@ import logo from '/images/logo.png'
       <div class="flex-none navbar-start hidden lg:block">
         <ul class="menu menu-horizontal">
           <!-- Navbar menu content here -->
-          <li><a class="active:bg-primary" href="#manifesto">Manifesto</a></li>
-          <li><a class="active:bg-primary" href="#team">Team</a></li>
-          <li><a class="active:bg-primary" href="#nft">NFT</a></li>
-          <li><a class="active:bg-primary" href="#cedar">Cedar</a></li>
-          <li><a href="#whitepaper" class="bg-primary hover:brightness-95">Whitepaper</a></li>
+          <li><button><a href="#manifesto">Manifesto</a></button></li>
+          <li><button><a href="#team">Team</a></button></li>
+          <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled ><a href="#nft">NFT</a></button></li>
+          <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled class="btn btn-link"><a href="#cedar">Cedar</a></button></li>
+          <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled class="btn btn-primary"><a href="#whitepaper">Whitepaper</a></button></li>
         </ul>
       </div>
 
@@ -32,19 +28,5 @@ import logo from '/images/logo.png'
       </div>
 
     </div>
+
     <slot />
-  </div>
-  <div class="drawer-side">
-    <label for="my-drawer-3" class="drawer-overlay"></label>
-    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-      <!-- Sidebar content here -->
-      <li><a href="#manifesto">Manifesto</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#nft">NFT</a></li>
-        <li><a href="#cedar">Cedar</a></li>
-        <li><a class="bg-primary hover:brightness-95">Whitepaper</a></li>
-
-    </ul>
-
-  </div>
-</div>
