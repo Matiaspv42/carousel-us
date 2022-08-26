@@ -12,10 +12,10 @@
         const catchphrase = 'Building the future under the ground'
 
         const teamMembers = await Astro.glob('../data/*.team.json')
-        const designMembers = await Astro.glob('../data/*.design.json')
+        const artMembers = await Astro.glob('../data/*.art.json')
 
         teamMembers.sort((a, b) => a.order - b.order)
-        designMembers.sort((a, b) => a.order - b.order)
+        artMembers.sort((a, b) => a.order - b.order)
 
         const getTwitterLink = (handle) => {
             return `https://twitter.com/${handle.slice(1)}`
@@ -65,10 +65,10 @@
             </div>
 
             <div id="design" class="scroll-mt-[4rem] h-fit mb-10 p-4">
-                <h1>Design team</h1>
+                <h1>Art team</h1>
 
                 <div class="flex flex-wrap gap-8 w-full md:w-3/4 justify-center mx-auto">
-                    {designMembers.map(m => (
+                    {artMembers.map(m => (
                     <div client:visible class="card w-96 bg-base-100 shadow-xl show-on-scroll">
                         <figure><img src={m.avatarUrl} alt="avatar"/></figure>
                         <div class="card-body">
