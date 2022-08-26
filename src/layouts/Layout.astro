@@ -7,6 +7,8 @@ export interface Props {
 }
 
 const { title } = Astro.props as Props;
+const wp = "https://docs.google.com/document/d/1q8JTfnohyIX9KLDNa4W3MdVNe5Ao0hEGl8IFZjPm9U8"
+const lp = "https://docs.google.com/presentation/d/1yR_XYWKwBXOXT_eexN63gEPTqo6XwYU2"
 ---
 
 <!DOCTYPE html>
@@ -32,17 +34,19 @@ const { title } = Astro.props as Props;
 	</div>
 		<div class="drawer-side">
 			<label for="my-drawer-3" class="drawer-overlay"></label>
-			<ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+			<ul class="menu p-4 overflow-y-auto w-80 bg-base-100 gap-2">
 				<!-- Sidebar content here -->
 				<li><a href="#manifesto">Manifesto</a></li>
 				<li><a href="#team">Team</a></li>
 				<li><a href="#nft">NFT</a></li>
-				<li><a href="#cedar">Cedar</a></li>
-				<li><a class="bg-primary hover:brightness-95">Whitepaper</a></li>
-
+				<li>
+					<button disabled class="btn btn-ghost"><a href="https://cedar.undergroundsociety.xyz">Cedar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button></li>
+				<li><button class="btn btn-primary"><a target="_blank" href={lp}>Litepaper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button></li>
+				<li><button class="btn btn-primary"><a target="_blank" href={wp}>Whitepaper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button></li>
 			</ul>
 
 		</div>
 	</div>
 	</body>
 </html>
+<script src="https://kit.fontawesome.com/51fc2db30d.js" crossorigin="anonymous"></script>

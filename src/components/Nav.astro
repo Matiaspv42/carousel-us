@@ -1,5 +1,8 @@
 ---
 import logo from '/images/logo.webp'
+
+const wp = "https://docs.google.com/document/d/1q8JTfnohyIX9KLDNa4W3MdVNe5Ao0hEGl8IFZjPm9U8"
+const lp = "https://docs.google.com/presentation/d/1yR_XYWKwBXOXT_eexN63gEPTqo6XwYU2"
 ---
 
     <!-- Navbar -->
@@ -11,13 +14,18 @@ import logo from '/images/logo.webp'
           <li><button><a href="#manifesto">Manifesto</a></button></li>
           <li><button><a href="#team">Team</a></button></li>
           <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled class="btn"><a href="#nft">NFT</a></button></li>
-          <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled class="btn btn-link"><a target="_blank" href="https://cedar.undergroundsociety.xyz">Cedar</a></button></li>
-          <li><button class="btn btn-primary"><a target="_blank" href="https://docs.google.com/document/d/1q8JTfnohyIX9KLDNa4W3MdVNe5Ao0hEGl8IFZjPm9U8/edit?usp=drivesdk">Whitepaper</a></button></li>
+          <li class="tooltip tooltip-bottom" data-tip="Coming soon"><button disabled class="btn btn-link"><a target="_blank" href="https://cedar.undergroundsociety.xyz">Cedar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button></li>
         </ul>
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-primary">Papers</label>
+          <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 w-52 mt-4 border border-primary shadow-2xl">
+            <li><a target="_blank" href={lp}>Litepaper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          <li><a target="_blank" href={wp}>Whitepaper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </div>
       </div>
 
       <div class="flex-1 mx-2 navbar-center">
-              <a href="#"><img src={logo} class="w-10 h-10"></a>
+              <a href="#manifesto"><img src={logo} class="w-10 h-10"></a>
       </div>
 
 
