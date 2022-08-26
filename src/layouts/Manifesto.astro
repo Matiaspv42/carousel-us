@@ -1,0 +1,17 @@
+---
+        import logoHor from '/images/logo-hor.svg'
+        const {frontmatter} = Astro.props as Props;
+---
+
+<h1>{frontmatter.title}</h1>
+<div class="h-40 w-full justify-center flex items-center overflow-y-hidden">
+<img src={logoHor} class="w-96 object-cover" alt="footer logo"/>
+</div>
+<div class="m-auto mt-20 w-fit">
+<slot/>
+
+<div class="mt-12 flex justify-center"><a target="_blank" href="https://www.twitter.com/UnderSocietyNFT"
+                                           class="btn btn-primary">
+    <span>DM us on Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+</a></div>
+</div>
