@@ -23,7 +23,11 @@ main, article, p, span {
 }
 
 p {
-    @apply prose;
+    @apply prose my-4;
+}
+
+blockquote > p {
+    @apply text-lg font-semibold text-secondary bg-neutral/5 p-6;
 }
 
 .btn {
@@ -32,4 +36,12 @@ p {
 
 .card {
     @apply rounded-none;
+}
+
+.base-md {
+    @apply m-auto mt-12 flex flex-col items-center;
+}
+
+.base-md img {
+    @apply mx-auto w-40 h-auto;
 }

@@ -2,7 +2,9 @@
 const {frontmatter} = Astro.props as Props;
 ---
 
-<h1>{frontmatter.title}</h1>
-<div class="m-auto mt-[25vh] w-fit">
-<slot/>
+<div class="flex flex-col">
+    <h2>{frontmatter.title}</h2>
+    <div class="show-on-scroll base-md">
+        <slot/>
+    </div>
 </div>
