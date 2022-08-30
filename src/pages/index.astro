@@ -1,7 +1,7 @@
 ---
         import Nav from '../components/Nav.astro'
         import Footer from '../components/Footer.astro'
-        import Ecosystem from '../components/Ecosystem.jsx'
+        import Ecosystem from '../components/Ecosystem.astro'
 
         import Layout from '../layouts/Layout.astro';
         import logo from '/images/logo.svg'
@@ -103,12 +103,7 @@
             </div>
         </div>
 
-        <div id="ecosystem" class="scroll-mt-[4rem] h-fit mb-10 p-4">
-            <h1>Ecosystem</h1>
-            <Ecosystem client:load/>
-            
-        </div>
-
+        <Ecosystem/>
     <Footer />
         </main>
         </Layout>

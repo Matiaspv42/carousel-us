@@ -1,0 +1,10 @@
+---
+const {frontmatter} = Astro.props as Props;
+---
+
+<div client:visible class="card w-96 bg-base-100/40 backdrop-blur-[3px] shadow-xl show-on-scroll">
+<div class="card-body">
+    <h2 class="card-title">{frontmatter.title}</h2>
+    <slot></slot>
+</div>
+</div>

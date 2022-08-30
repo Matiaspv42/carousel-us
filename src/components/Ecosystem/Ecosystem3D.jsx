@@ -20,7 +20,7 @@ export default function Ecosystem3D() {
 
     
   return (
-    <div className="Ecosystem" style={{height: "80vh"}}>
+    <div className="h-[80vh] max-w-96 z-0">
       <Canvas>
         <Suspense fallback={null}>
             <Model />
