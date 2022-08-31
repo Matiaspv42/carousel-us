@@ -4,7 +4,7 @@ import Ecosystem3D from "./Ecosystem/Ecosystem3D"
 const ecosystemItems = await Astro.glob('../data/*.ecosystem.md')
 ---
 
-<div id="ecosystem" class="scroll-mt-[4rem] h-fit mb-10 p-4 relative">
+<div id="ecosystem" class="snap-start scroll-mt-[4rem] h-fit mb-10 p-4 relative">
     <h1>Ecosystem</h1>
     <div class="w-full absolute top-5 -z-10 left-0">
         <Ecosystem3D client:load/>
