@@ -1,9 +1,9 @@
 ---
+        import Section from '../components/Section.astro'
         import logoHor from '/images/logo-hor.svg'
         const {frontmatter} = Astro.props as Props;
 ---
-
-<h1>{frontmatter.title}</h1>
+<Section id="manifesto" title="Manifesto" height="full">
 <div class="h-40 w-full justify-center flex items-center overflow-y-hidden">
 <img src={logoHor} class="w-96 object-cover" alt="footer logo"/>
 </div>
@@ -15,3 +15,4 @@
     <span>Follow us on Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 </a></div>
 </div>
+</Section>
