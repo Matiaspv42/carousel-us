@@ -1,0 +1,14 @@
+---
+export interface Props {
+    id: string
+    title: string
+}
+
+const { id, title } = Astro.props as Props;
+---
+
+<div id={id} class="snap-start scroll-mt-[4rem] h-fit mb-10 p-4">
+    <h1>{title}</h1>
+
+    <slot />
+</div>
