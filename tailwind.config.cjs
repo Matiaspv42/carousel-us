@@ -5,6 +5,7 @@ module.exports = {
         fontFamily: {
             sans: ['Prime', 'sans-serif'],
             display: ['Orbitron', 'sans-serif'],
+            mono: ['Jetbrains Mono', 'monospace'],
         },
         extend: {
             colors: {
@@ -28,13 +29,18 @@ module.exports = {
                         transform: 'translateY(0)'
                     },
                 },
-                fadeIn: {
-                    "0%": {opacity: 0},
-                    "100%": {opacity: 1}
+                blink: {
+                    '0%': {
+                        visibility: 'visible'
+                    },
+                    '100%': {
+                        visibility: 'hidden',
+                    },
                 }
             },
             animation: {
                 'fade-in-down': 'fade-in-down 0.6s ease-in forwards',
+                'blink': 'blink 0.75s steps(5, start) infinite'
             }
         },
     },
