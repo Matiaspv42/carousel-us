@@ -2,6 +2,7 @@
 layout: ../layouts/BaseMd.astro
 title: Cedar
 draft: false
+date: "2022-09-03"
 ---
 ![cedar logo](/images/cedar-logo_sm.png)
 **Cedar CLI** is a conditional NFT generator for the Solana blockchain. It's part of [Underground Society's Cedar](https://cedar.undergroundsociety.xyz) utility.

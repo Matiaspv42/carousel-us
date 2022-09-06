@@ -1,0 +1,14 @@
+---
+    import Section from './Section.astro'
+    const labsItems = await Astro.glob('../data/*.labs.md')
+    const sortedLabsItems = labsItems.sort((a, b) => Date.parse(a.frontmatter.date) - Date.parse(b.frontmatter.date))
+---
+
+<Section id="labs" title="Labs">
+    <div id="labs">
+        { sortedLabsItems.map(i => (
+            <i.Content />
+            )
+        )}
+    </div>
+</Section>
