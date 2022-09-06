@@ -1,4 +1,5 @@
 <script lang="ts">
+    import CTA from './CTA.svelte'
     import logo from '/images/logo.webp'
     import logoAlt from '/images/logo-alt.webp'
     import {fly} from 'svelte/transition'
@@ -21,24 +22,24 @@
         <div class="flex justify-center items-center grow">
             <ul class="flex flex-col gap-4 items-center justify-center">
                 <li>
-                    <a class="btn btn-primary btn-xl" href="https://core.undergroundsociety.xyz">
-                        <span>Core <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </a>
+                    <CTA link="https://core.undergroundsociety.xyz">
+                        Core
+                    </CTA>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-xl" href="https://sector.undergroundsociety.xyz">
-                        <span>The Sector <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </a>
+                    <CTA link="https://sector.undergroundsociety.xyz">
+                        The Sector
+                    </CTA>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-xl" href="https://cedar.undergroundsociety.xyz">
-                        <span>Cedar <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </a>
+                    <CTA link="https://cedar.undergroundsociety.xyz">
+                        Cedar
+                    </CTA>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-xl" href="https://auctions.undergroundsociety.xyz">
-                        <span>Auctions <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </a>
+                    <CTA link="https://auctions.undergroundsociety.xyz">
+                        Auctions
+                    </CTA>
                 </li>
             </ul>
         </div>

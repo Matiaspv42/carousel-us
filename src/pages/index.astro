@@ -5,6 +5,7 @@
         import TeamMembers from '../components/TeamMembers.astro'
         import ArtMembers from '../components/ArtMembers.astro'
         import Ecosystem from '../components/Ecosystem.astro'
+        import CTA from '../components/CTA.svelte'
 
         import Layout from '../layouts/Layout.astro';
         import logo from '/images/logo.svg'
@@ -36,10 +37,7 @@
                 <Core/>
                 <div class="flex flex-col gap-2 items-center">
                     <Cedar/>
-                    <a target="_blank" href="https://cedar.undergroundsociety.xyz"
-                       class="btn btn-primary w-fit">
-                        <span>Lean more <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                    </a>
+                    <CTA isExternal={true} link="https://cedar.undergroundsociety.xyz" >Lean more</CTA>
                 </div>
             </div>
         </Section>

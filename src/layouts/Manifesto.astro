@@ -1,7 +1,9 @@
 ---
         import Section from '../components/Section.astro'
+        import CTA from '../components/CTA.svelte'
         import logoHor from '/images/logo-hor.svg'
-        const {frontmatter} = Astro.props as Props;
+        const {frontmatter} = Astro.props as Props
+        const ctaLink = 'https://www.twitter.com/UnderSocietyNFT'
 ---
 <Section id="manifesto" title="Manifesto" height="full">
 <div class="h-40 w-full justify-center flex items-center overflow-y-hidden">
@@ -10,9 +12,8 @@
 <div class="m-auto mt-20 w-fit">
 <slot/>
 
-<div class="mt-12 flex justify-center"><a target="_blank" href="https://www.twitter.com/UnderSocietyNFT"
-                                           class="btn btn-primary">
-    <span>Follow us on Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-</a></div>
+<CTA link={ctaLink}>
+    Follow us on Twitter
+</CTA>
 </div>
 </Section>
