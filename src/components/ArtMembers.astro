@@ -1,4 +1,5 @@
 ---
+        import Section from './Section.astro'
         const artMembers = await Astro.glob('../data/*.art.json')
         artMembers.sort((a, b) => a.order - b.order)
 
@@ -7,7 +8,7 @@
         }
 
 ---
-
+<Section id="art" title="Art team">
 <div class="flex flex-wrap gap-8 w-full md:w-3/4 justify-center mx-auto">
     {artMembers.map(m => (
     <div client:visible class="card w-96 bg-base-100 shadow-xl show-on-scroll">
@@ -29,3 +30,4 @@
 )
 )}
 </div>
+</Section>
