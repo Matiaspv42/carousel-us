@@ -17,10 +17,12 @@
 {#if isMenuEnabled}
     <div transition:fly="{{ y: -200, easing: sineOut, duration: 500 }}" on:click={handleClick}
          class="fixed top-0 left-0 h-screen max-w-screen w-full flex bg-gunmetal-gray-dark">
-        <div class="hidden md:flex justify-center items-center w-full"><img src={logoAlt} alt="logo" class="h-96 w-96">
+        <div class="hidden md:flex flex-col gap-8 justify-center items-center w-full">
+            <img src={logoAlt} alt="logo" class="h-96 w-96">
+            <span class="text-xl text-primary font-mono">Follow the white rabbit <span class="animate-blink">_</span></span>
         </div>
         <div class="flex justify-center items-center w-full">
-            <ul class="flex flex-col gap-4 items-center justify-center">
+            <ul class="flex flex-col gap-4 items-start justify-center">
                 <li>
                     <CTA link="https://core.undergroundsociety.xyz">
                         Core
