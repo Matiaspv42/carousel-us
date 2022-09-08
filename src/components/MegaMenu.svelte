@@ -24,12 +24,12 @@
                 <span class="text-xl text-primary font-mono">Follow the white rabbit <span class="animate-blink">_</span></span>
                 <ul class="flex flex-col lg:flex-row gap-4 items-start justify-center">
                     <li>
-                        <CTA link="https://core.undergroundsociety.xyz">
+                        <CTA isDisabled={true} link="https://core.undergroundsociety.xyz">
                             Core
                         </CTA>
                     </li>
                     <li>
-                        <CTA link="https://sector.undergroundsociety.xyz">
+                        <CTA isDisabled={true} link="https://sector.undergroundsociety.xyz">
                             The Sector
                         </CTA>
                     </li>
@@ -39,7 +39,7 @@
                         </CTA>
                     </li>
                     <li>
-                        <CTA link="https://auctions.undergroundsociety.xyz">
+                        <CTA isDisabled={true} link="https://auctions.undergroundsociety.xyz">
                             Auctions
                         </CTA>
                     </li>

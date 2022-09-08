@@ -1,35 +1,17 @@
 <script lang="ts">
-    let isExternal = true
-    let link: string
-    let color: 'primary' | 'secondary' | 'accent' = 'primary'
-    let isDisabled: boolean = false
+    export let isExternal = true
+    export let link: string = ''
+    export let color: 'primary' | 'secondary' | 'accent' = 'primary'
+    export let isDisabled: boolean = false
+
+    const id = `link-${Date.now()}`
 </script>
-<style>
-    .primary {
-        @apply btn rounded-none btn-primary;
-    }
 
-    .secondary {
-        @apply btn rounded-none btn-secondary;
-    }
-
-    .accent {
-        @apply btn rounded-none btn-accent;
-    }
-</style>
-<div class="flex justify-center">
-    {#if isExternal}
-        <a disabled={isDisabled} target="_blank" href={link} class={color}>
-            <span>
-                <slot>Click me !</slot>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </span>
-        </a>
-    {:else}
-        <a disabled={isDisabled} href={link} class={color}>
-            <span>
-                <slot>Click me !</slot>
-            </span>
-        </a>
-    {/if}
-</div>
+<a id={id} target="_blank" href={link} class={`btn rounded-none btn-${color} ${isDisabled === true ? 'btn-disabled' : ''}`}>
+    <span>
+        <slot>Click me !</slot>
+        {#if isExternal}
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        {/if}
+    </span>
+</a>
