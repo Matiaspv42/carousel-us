@@ -12,18 +12,18 @@ const lp = "https://docs.google.com/presentation/d/1yR_XYWKwBXOXT_eexN63gEPTqo6X
   }
 
   .navSection{
-    @apply btn btn-ghost rounded-none
+    @apply p-4
     bg-[length:0_2px] bg-[0_100%] bg-no-repeat
     bg-gradient-to-r from-neutral to-neutral
-    transition-all ease-in-out delay-500 motion-reduce:transition-none;
+    transition-all ease-in-out duration-500 motion-reduce:transition-none;
   }
 
   .navSection:hover{
-    @apply btn btn-ghost rounded-none;
+    @apply p-4 rounded-none from-secondary to-secondary bg-[length:100%_2px];
   }
 
   .activeSection{
-    @apply btn btn-ghost bg-[length:100%_2px] font-bold rounded-none;
+    @apply p-4 bg-[length:100%_2px];
   }
 </style>
 
