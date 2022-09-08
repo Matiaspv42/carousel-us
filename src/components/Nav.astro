@@ -12,27 +12,18 @@ const lp = "https://docs.google.com/presentation/d/1yR_XYWKwBXOXT_eexN63gEPTqo6X
   }
 
   .navSection{
-    @apply btn btn-ghost link-underline rounded-none;
+    @apply btn btn-ghost rounded-none
+    bg-[length:0_2px] bg-[0_100%] bg-no-repeat
+    bg-gradient-to-r from-neutral to-neutral
+    transition-all ease-in-out delay-500 motion-reduce:transition-none;
   }
 
   .navSection:hover{
-    @apply btn link-full btn-ghost rounded-none;
+    @apply btn btn-ghost rounded-none;
   }
 
   .activeSection{
-    @apply btn btn-ghost link-full font-bold rounded-none;
-  }
-
-  .link-underline {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#000000, #000000);
-    background-size: 0 2px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size .4s ease-in-out;
-  }
-
-  .link-full {
-    background-size: 100% 2px;
+    @apply btn btn-ghost bg-[length:100%_2px] font-bold rounded-none;
   }
 </style>
 
