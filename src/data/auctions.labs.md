@@ -8,6 +8,6 @@ The Underground Society will also be the venue for unique raffles and auctions f
 Liquidated NFTs from our protocol will be transferred to the **auction house**. 
 
 Blue chips or on-the-rise NFT projects to be auctioned off to the community for lower than the floor price, some times dramatically. 
-Entry will be free for holders, but some will be open to the public. Although we could make higher profits by selling the NFT on the market, we view this as an excellent way to reward holders. 
+Entry will be free for holders. 
 
-When we grow the Underground Society as big as we intend, we expect many auctions each week, even each day. We like the idea of having multiple auctions occurring simultaneously and having “auction hours” each week. 
+When we grow the Underground Society as big as we intend, we expect many auctions each week, even each day. 
