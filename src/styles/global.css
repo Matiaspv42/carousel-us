@@ -39,7 +39,7 @@ blockquote > p {
 }
 
 .base-md {
-    @apply m-auto flex flex-col;
+    @apply flex flex-col;
 }
 
 .base-md img {
