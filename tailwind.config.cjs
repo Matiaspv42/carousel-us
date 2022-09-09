@@ -40,7 +40,8 @@ module.exports = {
             },
             animation: {
                 'fade-in-down': 'fade-in-down 0.6s ease-in forwards',
-                'blink': 'blink 0.75s steps(5, start) infinite'
+                'blink': 'blink 0.75s steps(5, start) infinite',
+                'underline-slide': 'background-size .4s ease-in-out'
             }
         },
     },
