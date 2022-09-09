@@ -59,7 +59,7 @@ targets.forEach(function (target) {
     observer.observe(target);
 });
 
-const IdSections = ["manifesto", "labs", "team", "ecosystem"]
+const IdSections = ["manifesto", "labs", "talon", "team"]
 const currentSection = (sections) => {
     sections.forEach((section) => {
         const navSection = document.getElementById(`nav-section-${section.target.id}`)
