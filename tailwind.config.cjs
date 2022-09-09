@@ -36,12 +36,21 @@ module.exports = {
                     '100%': {
                         visibility: 'hidden',
                     },
+                },
+                cursor: {
+                    '0%': {
+                        rotate: '0deg'
+                    },
+                    '100%': {
+                        rotate: '360deg',
+                    },
                 }
             },
             animation: {
                 'fade-in-down': 'fade-in-down 0.6s ease-in forwards',
                 'blink': 'blink 0.75s steps(5, start) infinite',
-                'underline-slide': 'background-size .4s ease-in-out'
+                'underline-slide': 'background-size .4s ease-in-out',
+                'cursor': 'cursor 3s linear infinite',
             }
         },
     },
