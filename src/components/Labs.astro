@@ -1,0 +1,12 @@
+---
+    import Section from './Section.astro'
+    import Labs from './Labs.svelte'
+    const labsItems = await Astro.glob('../data/*.labs.md')
+    const sortedLabsItems = labsItems.sort((a, b) => Date.parse(a.frontmatter.date) - Date.parse(b.frontmatter.date))
+    const sortedHtml = sortedLabsItems.map(i => i.compiledContent())
+    const sortedTitles = sortedLabsItems.map(i => i.frontmatter.title)
+---
+
+<Section id="labs" title="Labs">
+    <Labs client:load htmlItems={sortedHtml} titles={sortedTitles}></Labs>
+</Section>

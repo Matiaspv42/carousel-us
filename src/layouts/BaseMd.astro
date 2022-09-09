@@ -2,9 +2,6 @@
 const {frontmatter} = Astro.props as Props;
 ---
 
-<div class="flex flex-col">
-    <h2>{frontmatter.title}</h2>
-    <div class="show-on-scroll base-md">
-        <slot/>
-    </div>
+<div class="show-on-scroll base-md">
+    <slot/>
 </div>
