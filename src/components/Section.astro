@@ -9,13 +9,13 @@ const { id, title, height } = Astro.props as Props
 ---
 
 { height === 'full' && (
-    <div id={id} class="snap-start scroll-mt-[4rem] h-fit mb-10 p-4 min-h-screen">
+    <div id={id} class="snap-start lg:snap-none scroll-mt-[4rem] h-fit mb-10 p-4 min-h-screen">
         <h1>{title}</h1>
         <slot />
     </div>
 )}
 { height !== 'full' && (
-    <div id={id} class="snap-start scroll-mt-[4rem] h-fit mb-10 p-4">
+    <div id={id} class="snap-start lg:snap-none scroll-mt-[4rem] h-fit mb-10 p-4">
         <h1>{title}</h1>
         <slot />
     </div>
