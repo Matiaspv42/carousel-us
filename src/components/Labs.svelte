@@ -15,7 +15,7 @@
                     class="btn btn-ghost bg-base-100 grow
                     {activeIdx === index ? '' : 'brightness-95'}">
                 <span class="lg:hidden">{title}</span>
-                <img src={`/images/labs-btn-${title.toLowerCase()}-sm.png`} class="max-w-[80%] hidden lg:block"
+                <img src={`/images/labs-btn-${title.toLowerCase()}-sm.png`} class="max-w-[60%] hidden lg:block"
                      alt="labs-btn">
             </button>
         {/each}

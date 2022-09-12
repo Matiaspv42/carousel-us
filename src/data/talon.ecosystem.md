@@ -16,7 +16,6 @@ Depreciation of $TALON will be countered back by use cases for the token:
 - $TALON will be your entry to compete in the raffles for blue-chip or desirable up in coming NFT projects.
 
 
-On top of all of this we see the future being that users will be able to pay for protocol fees as well as future developments of other tools in $TALON
-MUCH more
+On top of all of this, users will be able to pay for protocol fees as well as future developments of other tools in $TALON.
 
-This should keep a consistent balance between emission and burn thus warranting holders and stakers a valuable token as well as enjoying discounted access to utilities developed by the team.
+This will keep a consistent balance between emission and burn thus warranting holders and stakers a valuable token as well as enjoying discounted access to utilities developed by the team.
