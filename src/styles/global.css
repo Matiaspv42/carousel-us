@@ -19,15 +19,15 @@ h3 {
 }
 
 main, article, p, span {
-    @apply font-sans;
+    @apply font-sans lg:text-lg;
 }
 
 p {
-    @apply prose my-4;
+    @apply prose my-4 lg:text-lg;
 }
 
 blockquote > p {
-    @apply text-lg font-semibold text-secondary bg-neutral/5 p-6;
+    @apply text-lg lg:text-xl font-semibold text-secondary bg-neutral/5 p-6;
 }
 
 .btn {

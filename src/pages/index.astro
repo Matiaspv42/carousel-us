@@ -7,9 +7,11 @@
         import Talon from '../components/Talon.astro'
         import CTA from '../components/CTA.svelte'
 
-        import Layout from '../layouts/Layout.astro';
+        import Layout from '../layouts/Layout.astro'
         import logo from '/images/logo.svg'
         import logoHor from '/images/logo-hor.svg'
+        import parallaxTop from '/images/parallax-top.svg'
+        import parallaxBot from '/images/parallax-bot.svg'
         import lettering from '/images/logo-lettering.webp'
 
         import { Content as Manifesto } from '../data/manifesto.md'
@@ -18,9 +20,9 @@
 
         const getTwitterLink = (handle) => {
         return `https://twitter.com/${handle.slice(1)}`
-        }
+}
 
-        ---
+---
 
 <Layout title="Underground Society NFT">
     <div id="hero" class="hero snap-start min-h-screen bg-fixed bg-[url('/images/bg2.gif')]">
@@ -34,8 +36,21 @@
         <div class="snap-start scroll-mt-[4rem]">
             <Manifesto/>
         </div>
+
         <Labs/>
+        <div class="relative snap-center w-full h-[75vh] bg-[url(/images/ai/nebuchadnezzar.png)] bg-fixed bg-cover bg-origin-border bg-center">
+            <div class="flex absolute w-full h-full z-0 bg-base-100/30"></div>
+            <img class="absolute w-1/2 lg:w-1/4 inset-x-0 inset-y-0 m-auto invert" src={lettering} alt=""/>
+            <img class="absolute bottom-0 w-full z-10" src={parallaxTop} alt=""/>
+            <img class="absolute top-0 w-full z-10" src={parallaxBot} alt=""/>
+        </div>
         <Talon/>
+        <div class="relative snap-center w-full h-[75vh] bg-[url(/images/ai/boy-standing-2.png)] bg-fixed bg-cover bg-origin-border bg-center">
+            <div class="flex absolute w-full h-full z-0 bg-base-100/30"></div>
+            <img class="absolute w-1/2 lg:w-1/4 inset-x-0 inset-y-0 m-auto invert" src={lettering} alt=""/>
+            <img class="absolute bottom-0 w-full z-10" src={parallaxTop} alt=""/>
+            <img class="absolute top-0 w-full z-10" src={parallaxBot} alt=""/>
+        </div>
         <TeamMembers/>
         <Footer/>
     </main>
