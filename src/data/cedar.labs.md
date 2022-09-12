@@ -8,6 +8,6 @@ date: "2022-09-03"
 Based on graph theory, it composes and generates images from layers, with their associated json metadata file. These json files
 follow [Metaplex](https://docs.metaplex.com/programs/token-metadata/token-standard)'s NFT standard.
 
-Cedar CLI is open source. **It is free forever**.
+> Cedar CLI is open source. **It is free forever**.
 
 We offer consulting services around that tool with full support to help you generate a collection. We also provide **OpenAI** integrations for NFT names and descriptions, and soon, fully customizable minting platforms.
