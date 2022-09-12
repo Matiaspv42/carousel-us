@@ -18,9 +18,9 @@
 
         const getTwitterLink = (handle) => {
         return `https://twitter.com/${handle.slice(1)}`
-        }
+}
 
-        ---
+---
 
 <Layout title="Underground Society NFT">
     <div id="hero" class="hero snap-start min-h-screen bg-fixed bg-[url('/images/bg2.gif')]">
@@ -34,8 +34,15 @@
         <div class="snap-start scroll-mt-[4rem]">
             <Manifesto/>
         </div>
+
         <Labs/>
+        <div class="relative w-full h-96 bg-[url(/images/ai/nebuchadnezzar.png)] bg-fixed bg-cover bg-origin-border bg-center">
+            <div class="flex absolute w-full h-full bg-neutral/20 backdrop-brightness-110"></div>
+        </div>
         <Talon/>
+        <div class="relative w-full h-96 bg-[url(/images/ai/boy-standing-2.png)] bg-fixed bg-cover bg-origin-border bg-center">
+            <div class="flex absolute w-full h-full bg-neutral/20 backdrop-brightness-110"></div>
+        </div>
         <TeamMembers/>
         <Footer/>
     </main>
