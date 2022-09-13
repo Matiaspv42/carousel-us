@@ -5,6 +5,7 @@
         import TeamMembers from '../components/TeamMembers.astro'
         import Labs from '../components/Labs.astro'
         import Talon from '../components/Talon.astro'
+        import Nft from '../components/Nft.astro'
         import CTA from '../components/CTA.svelte'
         import Cursor from '../components/Cursor.svelte'
 
@@ -52,6 +53,9 @@
             <img class="absolute bottom-0 w-full z-10" src={parallaxTop} alt=""/>
             <img class="absolute top-0 w-full z-10" src={parallaxBot} alt=""/>
         </div>
+
+        <Nft/>
+
         <TeamMembers/>
         <Footer/>
         <Cursor client:load/>

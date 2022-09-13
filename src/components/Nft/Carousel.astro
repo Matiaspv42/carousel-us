@@ -1,0 +1,57 @@
+<style>
+    .mySwiper {
+    width: 600px;
+    height: 600px;
+    }
+    .swiper-button-next{
+        padding: 30px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        background-color: gray;
+        opacity: 55%;
+        color: black;
+    }
+    .swiper-button-prev{
+        padding: 30px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        background-color: gray;
+        opacity: 55%;
+        color: black;
+    }
+</style>
+<div class="flex justify-center items-center relative h-full">
+    
+<div class="swiper w-[350px] md:w-[600px] lg:w-[600px] ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/images/nft/1.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/2.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/3.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/4.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/5.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/6.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/7.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/8.png"></div>
+      <div class="swiper-slide"><img src="/images/nft/9.png"></div>
+
+    </div>
+  
+    <div class="swiper-button-prev hidden md:flex lg:flex"></div>
+    <div class="swiper-button-next hidden md:flex lg:flex"></div>
+  
+  </div>
+</div>
+
+  <script >
+  import Swiper from 'swiper/bundle';
+
+import 'swiper/css/bundle';
+    var swiper = new Swiper(".swiper", {
+        effect: "cards",
+        loop:true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+  </script>

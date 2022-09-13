@@ -24,6 +24,8 @@
   "dependencies": {
     "@react-three/drei": "^9.24.4",
     "@react-three/fiber": "^8.6.0",
+    "pixi.js": "^6.5.3",
+    "swiper": "^8.3.2",
     "three": "^0.143.0"
   }
 }
